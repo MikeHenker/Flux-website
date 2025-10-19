@@ -17,9 +17,10 @@
                 <span class="logo-text">Flux</span>
             </div>
             <div class="nav-links">
-                <a href="#features">Features</a>
+                <a href="#documentation">Documentation</a>
                 <a href="#examples">Examples</a>
-                <a href="#documentation">Docs</a>
+                <a href="#source">Source Code</a>
+                <a href="#build">Build Guide</a>
                 <a href="#download" class="nav-download">Download</a>
             </div>
         </nav>
@@ -45,7 +46,7 @@
                         </svg>
                         Download Flux
                     </button>
-                    <a href="#examples" class="btn btn-secondary">See Examples</a>
+                    <a href="#documentation" class="btn btn-secondary">Read Docs</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
@@ -59,6 +60,42 @@
                     <div class="stat">
                         <span class="stat-number">REPL</span>
                         <span class="stat-label">Interactive</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="documentation" class="documentation">
+            <div class="container">
+                <h2 class="section-title">Documentation</h2>
+                <div class="docs-content">
+                    <div class="docs-overview">
+                        <h3>Getting Started with Flux</h3>
+                        <p>Flux is a modern programming language designed to showcase interpreter implementation. Learn the language syntax, build the interpreter, and start coding!</p>
+                    </div>
+                    <div class="docs-grid">
+                        <div class="docs-card">
+                            <h3>🚀 Quick Start</h3>
+                            <p>Get up and running with Flux in minutes.</p>
+                            <div class="code-block">
+                                <code>// Hello World in Flux<br>print "Hello, Flux!"</code>
+                            </div>
+                        </div>
+                        <div class="docs-card">
+                            <h3>📝 Language Syntax</h3>
+                            <p>Learn Flux's clean, expressive syntax.</p>
+                            <div class="code-block">
+                                <code>let name = "World"<br>fun greet(n) {<br>&nbsp;&nbsp;return "Hello, " + n<br>}</code>
+                            </div>
+                        </div>
+                        <div class="docs-card">
+                            <h3>🔧 Built-in Functions</h3>
+                            <p>Explore available functions and operators.</p>
+                            <div class="code-block">
+                                <code>print sqrt(16)  // 4<br>print abs(-42)  // 42<br>print clock()   // timestamp</code>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,30 +202,98 @@ print abs(-42)   // 42</code></pre>
             </div>
         </section>
 
-        <!-- Documentation Section -->
-        <section id="documentation" class="documentation">
+        <!-- Source Code Section -->
+        <section id="source" class="source">
             <div class="container">
-                <h2 class="section-title">Getting Started</h2>
-                <div class="docs-grid">
-                    <div class="docs-card">
-                        <h3>1. Download & Build</h3>
-                        <p>Download the source code and build with the included build scripts.</p>
-                        <div class="code-block">
-                            <code>./build.bat    # Windows<br>make all       # Unix/Linux</code>
+                <h2 class="section-title">Source Code</h2>
+                <div class="source-content">
+                    <div class="source-overview">
+                        <h3>Complete Implementation</h3>
+                        <p>Explore the full source code of the Flux programming language interpreter, built with modern C++17.</p>
+                    </div>
+                    <div class="source-grid">
+                        <div class="source-card">
+                            <h3>📄 Architecture</h3>
+                            <p><strong>Lexer → Parser → AST → Interpreter</strong></p>
+                            <ul>
+                                <li>Tokenization and lexical analysis</li>
+                                <li>Recursive descent parsing</li>
+                                <li>Abstract Syntax Tree generation</li>
+                                <li>Tree-walking interpreter</li>
+                            </ul>
+                        </div>
+                        <div class="source-card">
+                            <h3>🛠️ Modern C++17</h3>
+                            <p><strong>Clean, professional code</strong></p>
+                            <ul>
+                                <li>Smart pointers and RAII</li>
+                                <li>std::variant for dynamic typing</li>
+                                <li>Visitor pattern for AST traversal</li>
+                                <li>Exception handling for control flow</li>
+                            </ul>
+                        </div>
+                        <div class="source-card">
+                            <h3>📊 Repository Stats</h3>
+                            <p><strong>Well-organized codebase</strong></p>
+                            <ul>
+                                <li>~2,000 lines of C++</li>
+                                <li>10 focused commits</li>
+                                <li>Cross-platform build system</li>
+                                <li>Comprehensive examples</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="docs-card">
-                        <h3>2. Interactive Mode</h3>
-                        <p>Start the REPL to experiment with Flux interactively.</p>
-                        <div class="code-block">
-                            <code>./flux.exe     # Start REPL</code>
+                    <div class="source-links">
+                        <a href="https://github.com/MikeHenker/Flux" class="btn btn-primary" target="_blank">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                        <a href="#download" class="btn btn-secondary">Download Source</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Build Guide Section -->
+        <section id="build" class="build-guide">
+            <div class="container">
+                <h2 class="section-title">Build Guide</h2>
+                <div class="build-content">
+                    <div class="build-overview">
+                        <h3>Cross-Platform Building</h3>
+                        <p>Flux supports multiple compilers and platforms. Choose your preferred build method below.</p>
+                    </div>
+                    <div class="build-tabs">
+                        <div class="build-tab active" data-tab="windows">
+                            <h4>💻 Windows</h4>
+                        </div>
+                        <div class="build-tab" data-tab="unix">
+                            <h4>🐧 Unix/Linux</h4>
+                        </div>
+                        <div class="build-tab" data-tab="requirements">
+                            <h4>⚙️ Requirements</h4>
                         </div>
                     </div>
-                    <div class="docs-card">
-                        <h3>3. Run Scripts</h3>
-                        <p>Execute Flux programs from files with example programs included.</p>
-                        <div class="code-block">
-                            <code>./flux.exe examples/hello.flux</code>
+                    <div class="build-panels">
+                        <div class="build-panel active" id="windows">
+                            <h4>Windows Build</h4>
+                            <div class="code-block">
+                                <code># Automated build script<br>.\build.bat<br><br># Manual with Visual Studio<br>cl /EHsc /std:c++17 /Fe:flux.exe *.cpp<br><br># Clean build artifacts<br>.\clean.bat</code>
+                            </div>
+                        </div>
+                        <div class="build-panel" id="unix">
+                            <h4>Unix/Linux Build</h4>
+                            <div class="code-block">
+                                <code># Using Makefile<br>make all<br><br># Manual build<br>g++ -std=c++17 -O2 -o flux *.cpp<br><br># Clean<br>make clean</code>
+                            </div>
+                        </div>
+                        <div class="build-panel" id="requirements">
+                            <h4>Requirements</h4>
+                            <div class="code-block">
+                                <code># Compiler Support<br>GCC 7+ or Clang 5+ or MSVC 2017+<br><br># C++ Standard<br>C++17 or later<br><br># Dependencies<br>None - self-contained!</code>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -227,6 +227,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Build guide tab functionality
+    const buildTabs = document.querySelectorAll('.build-tab');
+    const buildPanels = document.querySelectorAll('.build-panel');
+    
+    buildTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.getAttribute('data-tab');
+            
+            // Remove active class from all tabs and panels
+            buildTabs.forEach(t => t.classList.remove('active'));
+            buildPanels.forEach(p => p.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding panel
+            tab.classList.add('active');
+            const targetPanel = document.getElementById(targetTab);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+    
     // Console easter egg
     console.log(`
     ⚡ Flux Programming Language ⚡

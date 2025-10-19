@@ -324,6 +324,168 @@ code, pre {
     background: white;
 }
 
+.docs-overview {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.docs-overview h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.docs-overview p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Source Code Section */
+.source {
+    padding: 5rem 0;
+    background: #f8fafc;
+}
+
+.source-content {
+    text-align: center;
+}
+
+.source-overview {
+    margin-bottom: 3rem;
+}
+
+.source-overview h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.source-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.source-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.source-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.source-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.source-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.source-card li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #666;
+}
+
+.source-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.source-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Build Guide Section */
+.build-guide {
+    padding: 5rem 0;
+    background: white;
+}
+
+.build-overview {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.build-overview h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.build-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.build-tab {
+    padding: 1rem 2rem;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.build-tab:hover,
+.build-tab.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.build-tab h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.build-panels {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.build-panel {
+    display: none;
+}
+
+.build-panel.active {
+    display: block;
+}
+
+.build-panel h4 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Getting Started Section (simplified) */
+.getting-started {
+    padding: 5rem 0;
+    background: #f8fafc;
+}
+
 .docs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
